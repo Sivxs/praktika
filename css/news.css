@@ -1,0 +1,669 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+.headlogo {
+    width: 140px;
+    height: 58px;
+}
+.header_menu {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+.based {
+    color: rgb(112, 184, 6);
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(112, 184, 6);
+}
+.reg {
+    display: inline-block; /* Для более точного контроля */
+    background-color: rgb(112, 184, 6); /* Зелёный цвет */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 15px; /* Закруглённые углы */
+    text-align: center; /* Центровка текста */
+    line-height: 60px; /* Вертикальная центровка текста */
+    font-family: 'Nunito', sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель меняется на руку при наведении */
+    transition: background-color 0.3s ease; /* Анимация при наведении */
+    width: 120%;
+    margin-top: 10px;
+}
+
+.reg:hover {
+    background-color: rgb(94, 153, 6); /* Темнее при наведении */
+}
+
+/* Ссылка внутри кнопки */
+.reg a {
+    color: white; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчёркивание */
+    display: inline-block; /* Чтобы текст следовал стилям контейнера */
+    line-height: 60px; /* Центровка текста внутри кнопки */
+}
+
+
+.first_title{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 80px;
+    font-size: 60px;
+}
+
+
+.heze {
+    
+    font-family: 'Nunito', sans-serif;
+    margin-left: 80px;
+}
+
+.before_news {
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+}
+
+.news_page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.news2 {
+    border: none;
+    border-radius: 40px;
+    margin-left: 30px;
+    padding: 1.5em;
+    margin-bottom: 30px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+
+.footer {
+    background-color:rgb(94, 124, 92); /* Зеленый цвет */
+    color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer .site-name,
+.footer .links {
+    margin-left: 60px; /* Сдвигаем вправо на 50px */
+}
+
+.footer .site-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer .links {
+    margin-top: 10px;
+}
+
+.footer .links a {
+    display: block;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer .links a:hover {
+    color: rgb(112, 184, 6)
+}
+
+.footer .info {
+    margin-right: 1250px;
+    line-height: 1.5;
+}
+
+.footer .logo {
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 200px;
+}
+
+.footer .logo img {
+    width: 180px;
+    height: 80px;
+}
+
+.footer .copyright {
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+}
+
+/*АДАПТИВ ДЕСКТОПЫ*/
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    /*Шапка*/
+    .headlogo{
+        width: 120px;
+        height: 50px;
+    }
+    .reg{
+        margin-top: 1px;
+        height: 60px;
+    }
+    .header_menu{
+        font-size: 18px;
+    }
+    .based{
+        font-size: 18px;
+    }
+    /*Середина сайта*/
+    .heze{
+        font-size: 15px;
+    }
+    .first_title{
+        font-size: 45px;
+    }
+    .before_news{
+        font-size: 25px;
+    }
+    .news2{
+        width: 450px;
+        height: 140px;
+    }
+    /*Подвал*/
+    .footer .info {
+        margin-right: 700px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+    /*Подвал*/
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1536px) and (max-height: 864px) {
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+/*АДАПТИВ ПЛАНШЕТЫ*/
+
+/* АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Шапка */
+    header {
+        flex-wrap: wrap;
+        padding: 10px 0;
+        height: auto;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        order: 1;
+        margin: 0 auto 10px;
+    }
+    
+    header ul {
+        padding: 5px;
+        margin: 5px 0;
+    }
+    
+    .header_menu, .based {
+        font-size: 16px;
+    }
+    
+    .reg {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    /* Хлебные крошки и заголовок */
+    .heze {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    
+    .first_title {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    /* Блоки документов */
+    .news_page {
+        margin-left: 0;
+        align-items: center;
+    }
+    
+    .news2 {
+        width: 80%;
+        margin-left: 0;
+        padding: 1em;
+    }
+    
+    .before_news {
+        font-size: 24px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 15px auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ МАЛЕНЬКИХ ПЛАНШЕТОВ (600px - 768px) */
+@media (max-width: 768px) {
+    /* Шапка */
+    header ul {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Заголовок */
+    .first_title {
+        font-size: 32px;
+    }
+    
+    /* Блоки документов */
+    .news2 {
+        width: 90%;
+    }
+    
+    .before_news {
+        font-size: 20px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Заголовок */
+    .first_title {
+        font-size: 28px;
+    }
+    
+    /* Блоки документов */
+    .before_news {
+        font-size: 18px;
+    }
+    
+    .news2 {
+        padding: 0.8em;
+    }
+}
+
+/*БУРГЕР МЕНЮ*/
+/* Десктопная версия (оставляем как было) */
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Планшетная и мобильная версия */
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid black;
+    }
+    
+    .headlogo {
+        width: 140px;
+        height: 58px;
+        margin-left: 0;
+        z-index: 1001;
+    }
+    
+    /* Скрываем основное меню */
+    .main-menu {
+        display: none !important;
+    }
+    
+    /* Стили для бургер-иконки */
+    .burger-menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 1001;
+        cursor: pointer;
+        margin-right: 80px;
+    }
+    
+    .burger-menu span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #000;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    
+    .burger-menu span:nth-child(1) { top: 0px; }
+    .burger-menu span:nth-child(2),
+    .burger-menu span:nth-child(3) { top: 10px; }
+    .burger-menu span:nth-child(4) { top: 20px; }
+    
+    .burger-menu.open span:nth-child(1),
+    .burger-menu.open span:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    .burger-menu.open span:nth-child(2) { transform: rotate(45deg); }
+    .burger-menu.open span:nth-child(3) { transform: rotate(-45deg); }
+    
+    /* Мобильное меню */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding-top: 80px;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu.open { right: 0; }
+    
+    .mobile-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .mobile-menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .mobile-menu .reg {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    /* Специфичные стили для личного кабинета */
+    .cabinet-header.main-menu {
+        display: none !important;
+    }
+}
+
+/* Десктопные стили (1366px и больше) */
+@media (min-width: 1025px) {
+    .burger-menu,
+    .mobile-menu {
+        display: none !important;
+    }
+    
+    .main-menu {
+        display: flex !important;
+    }
+    
+    /* Восстанавливаем оригинальные стили шапки */
+    header {
+        display: flex;
+        width: 100%;
+        height: 40%;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+    
+    .headlogo {
+        width: 120px;
+        height: 50px;
+        margin-left: 80px;
+    }
+    
+    .header_menu {
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .reg {
+        display: inline-block;
+        background-color: rgb(112, 184, 6);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 120%;
+    }
+    
+    /* Специфичные стили для личного кабинета */
+    .cabinet-header {
+        margin-left: 1160px;
+        display: flex;
+    }
+}
+
+/*ДЛЯ ТЕЛЕФОНОВ*/
+
+/* АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Шапка */
+    header {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        margin-left: 0;
+    }
+    
+    .burger-menu {
+        margin-right: 60px;
+    }
+    
+    /* Хлебные крошки */
+    .heze {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    
+    /* Заголовок */
+    .first_title {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* Блоки документов */
+    .news_page {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .news2 {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .before_news {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .news2 a {
+        font-size: 14px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .footer > div {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        font-size: 14px;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 0 auto 20px;
+    }
+    
+    .footer .logo img {
+        width: 140px;
+        height: auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    /* Мобильное меню */
+    .mobile-menu {
+        width: 80%;
+    }
+    
+    .mobile-menu ul {
+        padding: 0 20px;
+    }
+    
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+    
+    .mobile-menu a {
+        font-size: 16px;
+    }
+    
+    .mobile-menu .reg {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 400px) */
+@media (max-width: 400px) {
+    .first_title {
+        font-size: 20px;
+    }
+    
+    .news2 {
+        padding: 10px;
+    }
+    
+    .before_news {
+        font-size: 14px;
+    }
+    
+    .mobile-menu {
+        width: 90%;
+    }
+    
+    .footer .info {
+        font-size: 12px;
+    }
+}

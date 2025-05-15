@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><img src="image/Logo.png" alt="" class="headlogo"></h1>
+        <div class="cabinet-header">
+            <ul>
+                <li><a href="index.html" class="header_menu"><p>На главную</p></a></li>
+            </ul>
+            <ul>
+                <li><button class="reg"><a href="reg.html" id="logout">Выйти</a></button></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Добро пожаловать в личный кабинет</h1>
+        <div id="user-details">
+            <p id="user-info"></p> 
+        </div>
+        <div id="user-details">
+            <p id="user-info-email"></p>
+        </div>
+        <div id="user-request-container" style="display: none;">
+            <h2 class="first_title">Отправить запрос</h2>
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="request-type">Тип запроса:</label>
+                    <select id="request-type" class="form-control" required>
+                        <option value="">Выберите тип запроса</option>
+                        <option value="Оформление членства в СНТ">Оформление членства в СНТ</option>
+                        <option value="Заключение договоров">Заключение договоров</option>
+                        <option value="Выдача справок и документов">Выдача справок и документов</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить запрос</button>
+            </form>
+            <div id="request-status" style="margin-top: 20px;"></div>
+            <div id="requests-history" style="margin-top: 30px; display: none;">
+                <h3>История ваших запросов</h3>
+                <ul id="requests-list"></ul>
+            </div>
+        </div>
+        <div id="messages-container" style="display: none;">
+            <h2 class="first_title">Сообщения от пользователей</h2>
+            <ul id="messages-list"></ul>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div>
+            <div class="site-name">СТСН “ДУБКИ-2”</div>
+            <div class="links">
+                <a href="documents.html">Новости</a>
+                <a href="news.html">Документы</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+        <div class="info">
+            <div>Адрес СТСН: Владимирская область,<br> Александровский район, СТСН Дубки-2</div>
+            <div>Номер председателя: +7 999 999 99 99</div>
+        </div>
+        <div class="logo">
+            <!-- Добавьте изображение логотипа сюда -->
+            <img src="image/footerLogo.png" alt="Логотип">
+        </div>
+        <div class="copyright">Все права защищены 2024</div>
+    </footer>
+    <script src="js/cabinet.js" defer></script>
+</body>
+</html>

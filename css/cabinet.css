@@ -1,0 +1,721 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid black;
+}
+.headlogo {
+    width: 140px;
+    height: 58px;
+    margin-left: 80px;
+}
+.header_menu {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+.cabinet-header{
+    margin-left: 1160px;
+    display: flex;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+main p {
+    font-size: 18px;
+    color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(112, 184, 6);
+}
+
+#user-info {
+    margin-bottom: 20px; 
+    font-size: 18px;
+    color: #333;
+}
+
+#messages-container {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.first_title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 80px;
+    font-size: 60px;
+}
+.reg {
+    display: inline-block; /* Для более точного контроля */
+    background-color: rgb(112, 184, 6); /* Зелёный цвет */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 15px; /* Закруглённые углы */
+    text-align: center; /* Центровка текста */
+    line-height: 60px; /* Вертикальная центровка текста */
+    font-family: 'Nunito', sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель меняется на руку при наведении */
+    transition: background-color 0.3s ease; /* Анимация при наведении */
+    width: 120%;
+    margin-top: 10px;
+}
+
+.reg:hover {
+    background-color: rgb(94, 153, 6); /* Темнее при наведении */
+}
+
+/* Ссылка внутри кнопки */
+.reg a {
+    color: white; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем подчёркивание */
+    display: inline-block; /* Чтобы текст следовал стилям контейнера */
+    line-height: 60px; /* Центровка текста внутри кнопки */
+    width: 100px;
+}
+
+/* Текст приветствия */
+#user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    margin: 20px 80px; /* Отступы */
+    border: 1px solid #ccc; /* Граница блока */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 10px; /* Скругление углов */
+    background-color: #f9f9f9; /* Светлый фон */
+}
+
+#user-details p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0; /* Отступы между текстами */
+}
+
+
+.footer {
+    background-color:rgb(94, 124, 92); /* Зеленый цвет */
+    color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin-bottom: auto;
+}
+
+.footer .site-name,
+.footer .links {
+    margin-left: 60px; /* Сдвигаем вправо на 50px */
+}
+
+.footer .site-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer .links {
+    margin-top: 10px;
+}
+
+.footer .links a {
+    display: block;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer .links a:hover {
+    color: rgb(112, 184, 6)
+}
+
+.footer .info {
+    margin-right: 1250px;
+    line-height: 1.5;
+}
+
+.footer .logo {
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 200px;
+}
+
+.footer .logo img {
+    width: 180px;
+    height: 80px;
+}
+
+.footer .copyright {
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+}
+
+/*АДАПТИВ ДЕСКТОПЫ*/
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    /*Шапка*/
+    .headlogo{
+        width: 120px;
+        height: 50px;
+    }
+    .reg{
+        margin-top: 1px;
+        height: 60px;
+    }
+    .header_menu{
+        font-size: 18px;
+    }
+    .based{
+        font-size: 18px;
+    }
+    .cabinet-header{
+        margin-left: 680px;
+        display: flex;
+    }
+    /*Середина*/
+    .first_title{
+        font-size: 45px;
+    }
+    /*Подвал*/
+    .footer .info {
+        margin-right: 700px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+    /*Подвал*/
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1536px) and (max-height: 864px) {
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+/*АДАПТИВ ПЛАНШЕТЫ*/
+
+/* АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Шапка */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        height: auto;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .cabinet-header {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header_menu {
+        font-size: 18px;
+    }
+    
+    .reg {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    .reg a {
+        width: auto;
+    }
+    
+    /* Основное содержимое */
+    main {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+    
+    .first_title {
+        font-size: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    #user-details {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    #user-info, #user-info-email {
+        font-size: 16px;
+    }
+    
+    /* Сообщения */
+    #messages-container {
+        margin: 20px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 15px auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ МАЛЕНЬКИХ ПЛАНШЕТОВ (600px - 768px) */
+@media (max-width: 768px) {
+    /* Заголовок */
+    .first_title {
+        font-size: 32px;
+    }
+    
+    /* Блок пользователя */
+    #user-details {
+        margin: 15px;
+        padding: 10px;
+    }
+    
+    #user-info, #user-info-email {
+        font-size: 15px;
+    }
+    
+    /* Сообщения */
+    #messages-container {
+        margin: 15px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Заголовок */
+    .first_title {
+        font-size: 28px;
+    }
+    
+    /* Блок пользователя */
+    #user-details {
+        margin: 10px;
+        padding: 8px;
+    }
+    
+    #user-info, #user-info-email {
+        font-size: 14px;
+    }
+    
+    /* Кнопка выхода */
+    .reg {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
+
+/*ДЛЯ ТЕЛЕФОНА*/
+
+/* АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Шапка */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+        height: auto;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .cabinet-header {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cabinet-header ul {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header_menu {
+        font-size: 16px;
+    }
+    
+    .reg {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    
+    .reg a {
+        width: auto;
+    }
+    
+    /* Основное содержимое */
+    main {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .first_title {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    /* Блок пользователя */
+    #user-details {
+        margin: 10px;
+        padding: 15px;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+    
+    #user-info, #user-info-email {
+        font-size: 14px;
+    }
+    
+    /* Сообщения */
+    #messages-container {
+        margin: 10px;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+    
+    #messages-list {
+        padding-left: 15px;
+    }
+    
+    #messages-list li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 15px auto;
+    }
+    
+    .footer .logo img {
+        width: 140px;
+        height: auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 400px) */
+@media (max-width: 400px) {
+    .first_title {
+        font-size: 20px;
+    }
+    
+    #user-details {
+        padding: 10px;
+    }
+    
+    #user-info, #user-info-email {
+        font-size: 13px;
+    }
+    
+    #messages-list li {
+        font-size: 13px;
+    }
+    
+    .reg {
+        font-size: 13px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+#user-request-container {
+    margin: 30px 80px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#request-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: rgb(112, 184, 6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(94, 153, 6);
+}
+
+#request-status {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9ffe9;
+    color: #2e7d32;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    #user-request-container {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #user-request-container {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+}
+
+#requests-history {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#requests-history h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#requests-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#requests-list li {
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#requests-list li p {
+    margin: 5px 0;
+}
+
+#requests-list hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin: 10px 0;
+}
+.status-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.status-btn:hover {
+    background-color: #45a049;
+}
+#requests-history {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#requests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.request-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.request-item.completed {
+    border-left: 4px solid #4CAF50;
+}
+
+.request-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.request-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-badge.pending {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.status-badge.completed {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Стили для кнопок админа */
+.status-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.status-btn:hover {
+    background-color: #45a049;
+}
+
+#request-status {
+    display: none;
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: #2e7d32;
+}

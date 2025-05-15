@@ -1,0 +1,771 @@
+/* Стили для шапки */
+header {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.headlogo {
+    width: 140px;
+    height: 58px;
+}
+
+.header_menu {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.based {
+    color: rgb(112, 184, 6);
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(112, 184, 6);
+}
+
+.reg {
+    display: inline-block;
+    background-color: rgb(112, 184, 6);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120%;
+    margin-top: 10px;
+}
+
+.reg:hover {
+    background-color: rgb(94, 153, 6);
+}
+
+/* Контейнер формы */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+}
+
+/* Общие стили формы */
+form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+    display: none; /* По умолчанию формы скрыты */
+}
+form.active {
+    display: block; /* Активная форма отображается */
+}
+
+/* Стили заголовков формы */
+form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили заголовков полей */
+form .form-label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Стили полей ввода */
+form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form .form-control:focus {
+    border-color: rgb(112, 184, 6);
+    outline: none;
+    box-shadow: 0 0 5px rgba(112, 184, 6, 0.5);
+}
+
+/* Стили для кнопок */
+form .btn-primary {
+    display: block;
+    width: 110%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(112, 184, 6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .btn-primary:hover {
+    background-color: rgb(94, 153, 6);
+}
+
+/* Стили для текстовых подсказок */
+form .form-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Стили для переключения формы */
+.switch-form {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.switch-form span {
+    color: rgb(112, 184, 6);
+    cursor: pointer;
+    font-weight: bold;
+}
+.switch-form span:hover {
+    text-decoration: underline;
+}
+
+/* Стили для полей "First name" и "Last name" */
+form .row .col {
+    margin-bottom: 15px;
+}
+
+form .row .col .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form .row .col .form-control:focus {
+    border-color: rgb(112, 184, 6);
+    outline: none;
+    box-shadow: 0 0 5px rgba(112, 184, 6, 0.5);
+}
+
+/* Стили для футера */
+.footer {
+    background-color:rgb(94, 124, 92); /* Зеленый цвет */
+    color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer .site-name,
+.footer .links {
+    margin-left: 60px; /* Сдвигаем вправо на 50px */
+}
+
+.footer .site-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer .links {
+    margin-top: 10px;
+}
+
+.footer .links a {
+    display: block;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer .links a:hover {
+    color: rgb(112, 184, 6)
+}
+
+.footer .info {
+    margin-right: 1250px;
+    line-height: 1.5;
+}
+
+.footer .logo {
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 200px;
+}
+
+.footer .logo img {
+    width: 180px;
+    height: 80px;
+}
+
+.footer .copyright {
+    color: gray;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+}
+
+/*АДАПТИВ ДЕСКТОПЫ*/
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    /*Шапка*/
+    .headlogo{
+        width: 120px;
+        height: 50px;
+    }
+    .reg{
+        margin-top: 1px;
+        height: 60px;
+    }
+    .header_menu{
+        font-size: 18px;
+    }
+    .based{
+        font-size: 18px;
+    }
+    /*Подвал*/
+    .footer .info {
+        margin-right: 700px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+    /*Подвал*/
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1536px) and (max-height: 864px) {
+    .footer .info {
+        margin-right: 800px;
+        line-height: 1.5;
+    }
+}
+
+/*АДАПТИВ ПЛАНШЕТЫ*/
+
+/* АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Шапка */
+    header {
+        flex-wrap: wrap;
+        padding: 10px 0;
+        height: auto;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        order: 1;
+        margin: 0 auto 10px;
+    }
+    
+    header ul {
+        padding: 5px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header_menu, .based {
+        font-size: 16px;
+    }
+    
+    .reg {
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        margin: 5px auto;
+    }
+    
+    /* Формы */
+    .form-container {
+        min-height: auto;
+        padding: 20px 0;
+    }
+    
+    form {
+        max-width: 90%;
+        padding: 40px;
+        margin: 20px auto;
+    }
+    
+    form h2 {
+        font-size: 22px;
+    }
+    
+    form .form-label {
+        font-size: 16px;
+    }
+    
+    form .form-control {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    form .btn-primary {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    .switch-form {
+        font-size: 15px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 15px auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ МАЛЕНЬКИХ ПЛАНШЕТОВ (600px - 768px) */
+@media (max-width: 768px) {
+    /* Формы */
+    form {
+        padding: 30px;
+    }
+    
+    form h2 {
+        font-size: 20px;
+    }
+    
+    form .form-label {
+        font-size: 15px;
+    }
+    
+    form .form-control {
+        font-size: 14px;
+    }
+    
+    form .btn-primary {
+        font-size: 15px;
+    }
+    
+    .switch-form {
+        font-size: 14px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Формы */
+    form {
+        padding: 20px;
+    }
+    
+    form h2 {
+        font-size: 18px;
+    }
+    
+    form .form-label {
+        font-size: 14px;
+    }
+    
+    form .form-control {
+        font-size: 13px;
+        padding: 6px;
+    }
+    
+    form .btn-primary {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .switch-form {
+        font-size: 13px;
+    }
+}
+/*БУРГЕР МЕНЮ*/
+/* Десктопная версия (оставляем как было) */
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Планшетная и мобильная версия */
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid black;
+    }
+    
+    .headlogo {
+        width: 140px;
+        height: 58px;
+        margin-left: 0;
+        z-index: 1001;
+    }
+    
+    /* Скрываем основное меню */
+    .main-menu {
+        display: none !important;
+    }
+    
+    /* Стили для бургер-иконки */
+    .burger-menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 1001;
+        cursor: pointer;
+        margin-right: 80px;
+    }
+    
+    .burger-menu span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #000;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    
+    .burger-menu span:nth-child(1) { top: 0px; }
+    .burger-menu span:nth-child(2),
+    .burger-menu span:nth-child(3) { top: 10px; }
+    .burger-menu span:nth-child(4) { top: 20px; }
+    
+    .burger-menu.open span:nth-child(1),
+    .burger-menu.open span:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    .burger-menu.open span:nth-child(2) { transform: rotate(45deg); }
+    .burger-menu.open span:nth-child(3) { transform: rotate(-45deg); }
+    
+    /* Мобильное меню */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding-top: 80px;
+        overflow-y: auto;
+    }
+    
+    .mobile-menu.open { right: 0; }
+    
+    .mobile-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .mobile-menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .mobile-menu .reg {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    /* Специфичные стили для личного кабинета */
+    .cabinet-header.main-menu {
+        display: none !important;
+    }
+}
+
+/* Десктопные стили (1366px и больше) */
+@media (min-width: 1025px) {
+    .burger-menu,
+    .mobile-menu {
+        display: none !important;
+    }
+    
+    .main-menu {
+        display: flex !important;
+    }
+    
+    /* Восстанавливаем оригинальные стили шапки */
+    header {
+        display: flex;
+        width: 100%;
+        height: 40%;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+    
+    .headlogo {
+        width: 120px;
+        height: 50px;
+        margin-left: 80px;
+    }
+    
+    .header_menu {
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .reg {
+        display: inline-block;
+        background-color: rgb(112, 184, 6);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 120%;
+    }
+    
+    /* Специфичные стили для личного кабинета */
+    .cabinet-header {
+        margin-left: 1160px;
+        display: flex;
+    }
+}
+
+/*ДЛЯ ТЕЛЕФОНОВ*/
+/* АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (до 600px) */
+@media (max-width: 600px) {
+    /* Шапка */
+    header {
+        height: auto;
+    }
+    
+    .headlogo {
+        width: 100px;
+        height: 42px;
+        margin-left: 0;
+    }
+    
+    .burger-menu {
+        margin-right: 50px;
+    }
+    
+    /* Контейнер формы */
+    .form-container {
+        min-height: auto;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    
+    /* Формы */
+    form {
+        width: 90%;
+        padding: 25px;
+        margin: 20px auto;
+    }
+    
+    form h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    form .form-label {
+        font-size: 14px;
+    }
+    
+    form .form-control {
+        padding: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    form .btn-primary {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    
+    .switch-form {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+    
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .footer > div {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .footer .site-name,
+    .footer .links {
+        margin-left: 0;
+    }
+    
+    .footer .info {
+        margin-right: 0;
+        font-size: 14px;
+    }
+    
+    .footer .logo {
+        position: static;
+        transform: none;
+        margin: 0 auto 20px;
+    }
+    
+    .footer .logo img {
+        width: 140px;
+        height: auto;
+    }
+    
+    .footer .copyright {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    /* Мобильное меню */
+    .mobile-menu {
+        width: 80%;
+    }
+    
+    .mobile-menu ul {
+        padding: 0 20px;
+    }
+    
+    .mobile-menu li {
+        margin: 10px 0;
+    }
+    
+    .mobile-menu a {
+        font-size: 16px;
+    }
+    
+    .mobile-menu .reg {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 400px) */
+@media (max-width: 400px) {
+    form {
+        padding: 20px;
+    }
+    
+    form h2 {
+        font-size: 18px;
+    }
+    
+    form .form-label {
+        font-size: 13px;
+    }
+    
+    form .form-control {
+        font-size: 13px;
+        padding: 7px;
+    }
+    
+    form .btn-primary {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+    
+    .switch-form {
+        font-size: 12px;
+    }
+    
+    .mobile-menu {
+        width: 90%;
+    }
+}
